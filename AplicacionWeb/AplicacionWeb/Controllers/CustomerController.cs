@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Azure;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Modelos.Dto;
@@ -67,11 +68,11 @@ namespace AplicacionWeb.Controllers
         {
             try
             {
+                var response = _ICustomerService.AddSellOrder(orden);
                 if (orden.PayMethod == "" || orden.TotalValue == 0 || orden == null)
                 {
                     return BadRequest("Incomplete Data");
-                }
-                _ICustomerService.AddSellOrder(orden);
+                }            
                 return Ok("Added sell order");
             } catch (Exception ex)
             {

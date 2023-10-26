@@ -24,14 +24,15 @@ namespace Service.Service
         public DtoSellOrder AddSellOrder(DtoSellOrder orden)
         {
 
-
             if (orden.PayMethod == "" || orden.TotalValue == 0)
             {
 
                 return null; 
             }
+
+
             _context.DtoSellOrders.Add(orden);
-            _context.SaveChangesAsync();
+            _context.SaveChanges();
 
             return orden;
         }
@@ -48,7 +49,7 @@ namespace Service.Service
             else
             {
                 _context.Remove(order);
-                _context.SaveChangesAsync();
+                _context.SaveChanges();
                 return "Sell Order deleted";
                
             }
