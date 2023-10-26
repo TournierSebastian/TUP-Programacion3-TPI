@@ -1,4 +1,6 @@
-﻿using Modelos.Dto;
+﻿using Microsoft.Extensions.Logging;
+using Modelos.Dto;
+using Models.Dto;
 using Models.Models;
 using System;
 using System.Collections.Generic;
@@ -11,7 +13,7 @@ namespace Service.Service
     public class AdminService
     {
         private readonly TiendaContext _TiendaContext;
-
+            
 
         public AdminService(TiendaContext TiendaContext)
         {
@@ -20,5 +22,9 @@ namespace Service.Service
 
        
 
+        //public DtoProducts AddProducts(DtoProducts products)
+        //{
+
+        //}
     }
 }

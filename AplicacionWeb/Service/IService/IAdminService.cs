@@ -11,10 +11,6 @@ namespace Service.IService
     public interface IAdminService
     {
 
-        void SendOrder(int PayMethod, int TotalValue);
-
-        void DeleteOrder(int id);
-
-        DtoSellOrder GetOrder();
+        DtoProducts AddProducts(DtoProducts products); 
     }
 }

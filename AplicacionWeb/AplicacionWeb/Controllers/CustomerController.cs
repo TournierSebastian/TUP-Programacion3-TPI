@@ -63,11 +63,11 @@ namespace AplicacionWeb.Controllers
         }
 
     [HttpPost("AddSellOrder")]
-        public IActionResult AddSellOrder([FromBody] DtoSellOrder orden)
+        public ActionResult<DtoSellOrder> AddSellOrder([FromBody] DtoSellOrder orden)
         {
             try
             {
-                if (orden.PayMethod == "" || orden.TotalValue == 0)
+                if (orden.PayMethod == "" || orden.TotalValue == 0 || orden == null)
                 {
                     return BadRequest("Incomplete Data");
                 }

@@ -15,7 +15,7 @@ namespace Service.IService
         List<DtoSellOrder> GetallOrder();
 
         DtoSellOrder GetOrderById(int id);
-        IActionResult AddSellOrder(DtoSellOrder orden);
+        DtoSellOrder AddSellOrder(DtoSellOrder orden);
         string DeleteOrderByid (int orderId);
 
     }

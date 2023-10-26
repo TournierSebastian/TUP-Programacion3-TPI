@@ -21,14 +21,19 @@ namespace Service.Service
         }
 
 
-        public IActionResult AddSellOrder(DtoSellOrder orden)
+        public DtoSellOrder AddSellOrder(DtoSellOrder orden)
         {
-           
 
+
+            if (orden.PayMethod == "" || orden.TotalValue == 0)
+            {
+
+                return null; 
+            }
             _context.DtoSellOrders.Add(orden);
             _context.SaveChangesAsync();
 
-            return new OkObjectResult("Orden de venta creada exitosamente.");
+            return orden;
         }
        
         public string DeleteOrderByid (int orderid)
