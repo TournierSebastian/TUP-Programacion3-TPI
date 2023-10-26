@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Modelos.Dto;
+using Models.Dto;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +10,11 @@ namespace Service.IService
 {
     public interface IAdminService
     {
+
+        void SendOrder(int PayMethod, int TotalValue);
+
+        void DeleteOrder(int id);
+
+        DtoSellOrder GetOrder();
     }
 }

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Modelos.Dto;
+using Models.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +8,17 @@ using System.Threading.Tasks;
 
 namespace Service.Service
 {
-    internal class AdminService
+    public class AdminService
     {
+        private readonly TiendaContext _TiendaContext;
+
+
+        public AdminService(TiendaContext TiendaContext)
+        {
+            _TiendaContext = TiendaContext;
+        }
+
+       
+
     }
 }

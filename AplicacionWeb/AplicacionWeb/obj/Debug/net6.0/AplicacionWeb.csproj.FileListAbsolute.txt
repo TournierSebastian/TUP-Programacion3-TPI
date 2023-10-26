@@ -87,3 +87,5 @@ C:\Users\sebas\Desktop\TUP-Programacion3-TPI\AplicacionWeb\AplicacionWeb\bin\Deb
 C:\Users\sebas\Desktop\TUP-Programacion3-TPI\AplicacionWeb\AplicacionWeb\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\sebas\Desktop\TUP-Programacion3-TPI\AplicacionWeb\AplicacionWeb\bin\Debug\net6.0\Modelos.dll
 C:\Users\sebas\Desktop\TUP-Programacion3-TPI\AplicacionWeb\AplicacionWeb\bin\Debug\net6.0\Modelos.pdb
+C:\Users\sebas\Desktop\TUP-Programacion3-TPI\AplicacionWeb\AplicacionWeb\bin\Debug\net6.0\Service.dll
+C:\Users\sebas\Desktop\TUP-Programacion3-TPI\AplicacionWeb\AplicacionWeb\bin\Debug\net6.0\Service.pdb
