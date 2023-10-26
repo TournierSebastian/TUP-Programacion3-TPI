@@ -19,7 +19,7 @@ namespace AplicacionWeb.Controllers
         }
 
         [HttpPost("AddProduct")]
-        public ActionResult<DtoProducts> AddProducts(DtoProducts products)
+        public ActionResult<DtoProducts> AddProducts([FromBody]DtoProducts products)
         {
             _AdminService.AddProducts(products);
             return Ok("se anadio");
