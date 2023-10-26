@@ -12,5 +12,8 @@ namespace Service.IService
     {
 
         DtoProducts AddProducts(DtoProducts products); 
+        List <DtoProducts> GetAllProducts();
+        DtoProducts GetProductsById(int id);
+        string DeleteProductByID(int id);
     }
 }
