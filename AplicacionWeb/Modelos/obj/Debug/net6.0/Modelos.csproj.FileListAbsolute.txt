@@ -12,3 +12,17 @@ C:\Users\sebas\Desktop\TUP-Programacion3-TPI\AplicacionWeb\Modelos\obj\Debug\net
 C:\Users\sebas\Desktop\TUP-Programacion3-TPI\AplicacionWeb\Modelos\obj\Debug\net6.0\Modelos.pdb
 C:\Users\sebas\Desktop\TUP-Programacion3-TPI\AplicacionWeb\Modelos\obj\Debug\net6.0\Modelos.genruntimeconfig.cache
 C:\Users\sebas\Desktop\TUP-Programacion3-TPI\AplicacionWeb\Modelos\obj\Debug\net6.0\ref\Modelos.dll
+C:\Users\matia\OneDrive\Escritorio\TUP-Programacion3-TPI\AplicacionWeb\Modelos\bin\Debug\net6.0\Modelos.deps.json
+C:\Users\matia\OneDrive\Escritorio\TUP-Programacion3-TPI\AplicacionWeb\Modelos\bin\Debug\net6.0\Modelos.runtimeconfig.json
+C:\Users\matia\OneDrive\Escritorio\TUP-Programacion3-TPI\AplicacionWeb\Modelos\bin\Debug\net6.0\Modelos.dll
+C:\Users\matia\OneDrive\Escritorio\TUP-Programacion3-TPI\AplicacionWeb\Modelos\bin\Debug\net6.0\Modelos.pdb
+C:\Users\matia\OneDrive\Escritorio\TUP-Programacion3-TPI\AplicacionWeb\Modelos\obj\Debug\net6.0\Modelos.csproj.AssemblyReference.cache
+C:\Users\matia\OneDrive\Escritorio\TUP-Programacion3-TPI\AplicacionWeb\Modelos\obj\Debug\net6.0\Modelos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\matia\OneDrive\Escritorio\TUP-Programacion3-TPI\AplicacionWeb\Modelos\obj\Debug\net6.0\Modelos.AssemblyInfoInputs.cache
+C:\Users\matia\OneDrive\Escritorio\TUP-Programacion3-TPI\AplicacionWeb\Modelos\obj\Debug\net6.0\Modelos.AssemblyInfo.cs
+C:\Users\matia\OneDrive\Escritorio\TUP-Programacion3-TPI\AplicacionWeb\Modelos\obj\Debug\net6.0\Modelos.csproj.CoreCompileInputs.cache
+C:\Users\matia\OneDrive\Escritorio\TUP-Programacion3-TPI\AplicacionWeb\Modelos\obj\Debug\net6.0\Modelos.dll
+C:\Users\matia\OneDrive\Escritorio\TUP-Programacion3-TPI\AplicacionWeb\Modelos\obj\Debug\net6.0\refint\Modelos.dll
+C:\Users\matia\OneDrive\Escritorio\TUP-Programacion3-TPI\AplicacionWeb\Modelos\obj\Debug\net6.0\Modelos.pdb
+C:\Users\matia\OneDrive\Escritorio\TUP-Programacion3-TPI\AplicacionWeb\Modelos\obj\Debug\net6.0\Modelos.genruntimeconfig.cache
+C:\Users\matia\OneDrive\Escritorio\TUP-Programacion3-TPI\AplicacionWeb\Modelos\obj\Debug\net6.0\ref\Modelos.dll

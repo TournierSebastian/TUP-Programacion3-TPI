@@ -2,6 +2,7 @@
 using Modelos.Dto;
 using Models.Dto;
 using Models.Models;
+using Service.IService;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Service.Service
 {
-    public class AdminService
+    public class AdminService : IAdminService
     {
         private readonly TiendaContext _TiendaContext;
             
@@ -22,9 +23,11 @@ namespace Service.Service
 
        
 
-        //public DtoProducts AddProducts(DtoProducts products)
-        //{
-
-        //}
+        public DtoProducts AddProducts(DtoProducts products)
+        {
+            _TiendaContext.DtoProducts.Add(products);
+            _TiendaContext.SaveChanges();
+            return products;
+        }
     }
 }
