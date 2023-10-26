@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\matia\\OneDrive\\Escritorio\\TUP-Programacion3-TPI\\AplicacionWeb\\Modelos\\Modelos.csproj": {}
+    "C:\\Users\\sebas\\Desktop\\TUP-Programacion3-TPI\\AplicacionWeb\\Modelos\\Modelos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\matia\\OneDrive\\Escritorio\\TUP-Programacion3-TPI\\AplicacionWeb\\Modelos\\Modelos.csproj": {
+    "C:\\Users\\sebas\\Desktop\\TUP-Programacion3-TPI\\AplicacionWeb\\Modelos\\Modelos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\matia\\OneDrive\\Escritorio\\TUP-Programacion3-TPI\\AplicacionWeb\\Modelos\\Modelos.csproj",
+        "projectUniqueName": "C:\\Users\\sebas\\Desktop\\TUP-Programacion3-TPI\\AplicacionWeb\\Modelos\\Modelos.csproj",
         "projectName": "Modelos",
-        "projectPath": "C:\\Users\\matia\\OneDrive\\Escritorio\\TUP-Programacion3-TPI\\AplicacionWeb\\Modelos\\Modelos.csproj",
-        "packagesPath": "C:\\Users\\matia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\matia\\OneDrive\\Escritorio\\TUP-Programacion3-TPI\\AplicacionWeb\\Modelos\\obj\\",
+        "projectPath": "C:\\Users\\sebas\\Desktop\\TUP-Programacion3-TPI\\AplicacionWeb\\Modelos\\Modelos.csproj",
+        "packagesPath": "C:\\Users\\sebas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sebas\\Desktop\\TUP-Programacion3-TPI\\AplicacionWeb\\Modelos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\matia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sebas\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

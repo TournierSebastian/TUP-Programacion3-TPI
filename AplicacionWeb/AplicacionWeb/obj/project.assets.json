@@ -4014,19 +4014,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\matia\\.nuget\\packages\\": {}
+    "C:\\Users\\sebas\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\matia\\OneDrive\\Escritorio\\TUP-Programacion3-TPI\\AplicacionWeb\\AplicacionWeb\\AplicacionWeb.csproj",
+      "projectUniqueName": "C:\\Users\\sebas\\Desktop\\TUP-Programacion3-TPI\\AplicacionWeb\\AplicacionWeb\\AplicacionWeb.csproj",
       "projectName": "AplicacionWeb",
-      "projectPath": "C:\\Users\\matia\\OneDrive\\Escritorio\\TUP-Programacion3-TPI\\AplicacionWeb\\AplicacionWeb\\AplicacionWeb.csproj",
-      "packagesPath": "C:\\Users\\matia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\matia\\OneDrive\\Escritorio\\TUP-Programacion3-TPI\\AplicacionWeb\\AplicacionWeb\\obj\\",
+      "projectPath": "C:\\Users\\sebas\\Desktop\\TUP-Programacion3-TPI\\AplicacionWeb\\AplicacionWeb\\AplicacionWeb.csproj",
+      "packagesPath": "C:\\Users\\sebas\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\sebas\\Desktop\\TUP-Programacion3-TPI\\AplicacionWeb\\AplicacionWeb\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\matia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\sebas\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4040,11 +4040,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\matia\\OneDrive\\Escritorio\\TUP-Programacion3-TPI\\AplicacionWeb\\Modelos\\Modelos.csproj": {
-              "projectPath": "C:\\Users\\matia\\OneDrive\\Escritorio\\TUP-Programacion3-TPI\\AplicacionWeb\\Modelos\\Modelos.csproj"
+            "C:\\Users\\sebas\\Desktop\\TUP-Programacion3-TPI\\AplicacionWeb\\Modelos\\Modelos.csproj": {
+              "projectPath": "C:\\Users\\sebas\\Desktop\\TUP-Programacion3-TPI\\AplicacionWeb\\Modelos\\Modelos.csproj"
             },
-            "C:\\Users\\matia\\OneDrive\\Escritorio\\TUP-Programacion3-TPI\\AplicacionWeb\\Service\\Service.csproj": {
-              "projectPath": "C:\\Users\\matia\\OneDrive\\Escritorio\\TUP-Programacion3-TPI\\AplicacionWeb\\Service\\Service.csproj"
+            "C:\\Users\\sebas\\Desktop\\TUP-Programacion3-TPI\\AplicacionWeb\\Service\\Service.csproj": {
+              "projectPath": "C:\\Users\\sebas\\Desktop\\TUP-Programacion3-TPI\\AplicacionWeb\\Service\\Service.csproj"
             }
           }
         }
