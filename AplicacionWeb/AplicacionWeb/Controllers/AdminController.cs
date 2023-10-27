@@ -105,6 +105,30 @@ namespace AplicacionWeb.Controllers
             }
 
         }
+        [HttpPut("ModifyProductById / {id}")]
+        public ActionResult <string> ModifyProductById(int id, Products product)
+        {
+
+
+            try
+            {
+                var Response = _AdminService.ModifyProductById(id, product);
+
+                if (Response != "Modified Product")
+                {
+                    return NotFound("Product Not Found");
+                }
+                return Ok(Response);
+
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"An error occurred in ModifyProductById: {ex}");
+                return BadRequest($"{ex.Message}");
+            }
+            
+           
+        }
 
     }
 }

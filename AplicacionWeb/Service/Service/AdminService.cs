@@ -57,6 +57,22 @@ namespace Service.Service
             return ("Product Delete");
 
         }
+
+        public string ModifyProductById(int id, Products product)
+        {
+            var productModify = _TiendaContext.DtoProducts.FirstOrDefault(x => x.idProducts == id);
+            if (productModify == null || productModify.Name == "" || productModify.Descripcion == "" || productModify.Price == 0)
+            {
+                return (" Incomplete Data ");
+            }
+
+            productModify.Name = product.Name;
+            productModify.Descripcion = product.Descripcion;
+            productModify.Price = product.Price;
+            _TiendaContext.SaveChanges();
+            return ("Modified Product");
+
+        }
     }
     
 }
