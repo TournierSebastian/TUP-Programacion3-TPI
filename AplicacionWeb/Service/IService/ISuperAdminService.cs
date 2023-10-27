@@ -1,12 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Models.Dto;
+
 
 namespace Service.IService
 {
     public interface ISuperAdminService
     {
+        DtoUser AddUser(DtoUser user);
+        List<DtoUser> GetAllUser();
+
+        string DeleteUserByid(int id);
+
     }
 }

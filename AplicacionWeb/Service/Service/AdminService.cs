@@ -1,13 +1,8 @@
-﻿using Microsoft.Extensions.Logging;
-using Modelos.Dto;
+﻿
 using Models.Dto;
 using Models.Models;
 using Service.IService;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Service.Service
 {
@@ -36,13 +31,13 @@ namespace Service.Service
         }
         public List <DtoProducts> GetAllProducts()
         {
-             var Response = _TiendaContext.DtoProducts.ToList();
-            return Response;
+             var products = _TiendaContext.DtoProducts.ToList();
+            return products;
         }
         public  DtoProducts GetProductsById(int id)
         {
-            var Response = _TiendaContext.DtoProducts.FirstOrDefault(x => x.idProducts == id);
-            return Response;
+            var productsId = _TiendaContext.DtoProducts.FirstOrDefault(x => x.idProducts == id);
+            return productsId;
         }
 
         public string DeleteProductByID(int id)
@@ -55,6 +50,22 @@ namespace Service.Service
             _TiendaContext.Remove(products);
             _TiendaContext.SaveChanges();
             return ("Product Delete");
+
+        }
+
+        public string ModifyProductById(int id, Products product)
+        {
+            var productModify = _TiendaContext.DtoProducts.FirstOrDefault(x => x.idProducts == id);
+            if (product == null || product.Name == "" || product.Descripcion == "" || product.Price == 0)
+            {
+                return (" Incomplete Data ");
+            }
+
+            productModify.Name = product.Name;
+            productModify.Descripcion = product.Descripcion;
+            productModify.Price = product.Price;
+            _TiendaContext.SaveChanges();
+            return ("Modified Product");
 
         }
     }

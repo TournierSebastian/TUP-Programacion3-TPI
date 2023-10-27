@@ -1,11 +1,7 @@
-﻿using Azure;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
+﻿using Microsoft.AspNetCore.Mvc;
 using Modelos.Dto;
-using Models.Models;
 using Service.IService;
-using Service.Service;
+
 
 namespace AplicacionWeb.Controllers
 {

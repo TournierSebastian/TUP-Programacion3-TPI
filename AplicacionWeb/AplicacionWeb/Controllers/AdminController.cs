@@ -19,28 +19,6 @@ namespace AplicacionWeb.Controllers
             _AdminService = adminService;
         }
 
-        // validar, precio vacio o 0
-        //          nombre vacio
-        //          descripcion vacio
-        [HttpPost("AddProduct")]
-        public ActionResult<DtoProducts> AddProducts([FromBody]DtoProducts products)
-        {
-
-            try
-            {
-                var Response = _AdminService.AddProducts(products);
-                if(Response == null)
-                {
-                    return NotFound("incomplete data");
-                }
-                return Ok($"added product" );
-
-            }catch(Exception ex)
-            {
-                _logger.LogError($"An error occurred in AddProduct: {ex}");
-                return BadRequest($"{ex.Message}");
-            }
-        }
 
         [HttpGet("GetAllProducts")]
         public ActionResult <List<DtoProducts>> GetAllProducts()
@@ -84,6 +62,26 @@ namespace AplicacionWeb.Controllers
             }
         }
 
+        [HttpPost("AddProduct")]
+        public ActionResult<DtoProducts> AddProducts([FromBody] DtoProducts products)
+        {
+
+            try
+            {
+                var Response = _AdminService.AddProducts(products);
+                if (Response == null)
+                {
+                    return NotFound("incomplete data");
+                }
+                return Ok($"added product");
+
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"An error occurred in AddProduct: {ex}");
+                return BadRequest($"{ex.Message}");
+            }
+        }
         [HttpDelete("DeleteProductsById / {id}")]
         public ActionResult<string> DeleteProductById(int id)
         {
@@ -104,6 +102,30 @@ namespace AplicacionWeb.Controllers
                 return BadRequest($"{ex.Message}");
             }
 
+        }
+        [HttpPut("ModifyProductById / {id}")]
+        public ActionResult <string> ModifyProductById(int id, Products product)
+        {
+
+
+            try
+            {
+                var Response = _AdminService.ModifyProductById(id, product);
+
+                if (Response != "Modified Product")
+                {
+                    return NotFound("Unmodified product");
+                }
+                return Ok(Response);
+
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"An error occurred in ModifyProductById: {ex}");
+                return BadRequest($"{ex.Message}");
+            }
+            
+           
         }
 
     }

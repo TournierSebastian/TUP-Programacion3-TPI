@@ -1,23 +1,19 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿
 using Modelos.Dto;
-using Models.Dto;
+
 using Models.Models;
 using Service.IService;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Service.Service
 {
     public class CustomerService : ICustomerService
     {
 
-        private readonly TiendaContext _context;
+        private readonly TiendaContext _TiendaContext;
         public CustomerService(TiendaContext context) 
-        { 
-            _context = context; 
+        {
+            _TiendaContext = context; 
         }
 
 
@@ -31,15 +27,15 @@ namespace Service.Service
             }
 
 
-            _context.DtoSellOrders.Add(orden);
-            _context.SaveChanges();
+            _TiendaContext.DtoSellOrders.Add(orden);
+            _TiendaContext.SaveChanges();
 
             return orden;
         }
        
         public string DeleteOrderByid (int orderid)
         {
-            var order = _context.DtoSellOrders.FirstOrDefault(x =>x.idOrder == orderid);
+            var order = _TiendaContext.DtoSellOrders.FirstOrDefault(x =>x.idOrder == orderid);
              string response = string.Empty;
 
             if (order == null)
@@ -48,19 +44,17 @@ namespace Service.Service
             }
             else
             {
-                _context.Remove(order);
-                _context.SaveChanges();
+                _TiendaContext.Remove(order);
+                _TiendaContext.SaveChanges();
                 return "Sell Order deleted";
                
             }
             
         }
-
-
         public List<DtoSellOrder> GetallOrder()
         {
 
-            var order = _context.DtoSellOrders.ToList();
+            var order = _TiendaContext.DtoSellOrders.ToList();
             return order;
             
         }
@@ -68,7 +62,7 @@ namespace Service.Service
 
         public DtoSellOrder GetOrderById(int id)
         {
-            var order = _context.DtoSellOrders.FirstOrDefault(x =>x.idOrder == id);
+            var order = _TiendaContext.DtoSellOrders.FirstOrDefault(x =>x.idOrder == id);
 
             return order; 
         }

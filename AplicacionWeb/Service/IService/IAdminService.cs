@@ -1,10 +1,7 @@
-﻿using Modelos.Dto;
+﻿
 using Models.Dto;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Models.Models;
+
 
 namespace Service.IService
 {
@@ -15,5 +12,6 @@ namespace Service.IService
         List <DtoProducts> GetAllProducts();
         DtoProducts GetProductsById(int id);
         string DeleteProductByID(int id);
+        string ModifyProductById(int id, Products product);
     }
 }
