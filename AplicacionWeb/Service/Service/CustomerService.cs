@@ -1,6 +1,6 @@
 ﻿
 using Modelos.Dto;
-
+using Models.Dto;
 using Models.Models;
 using Service.IService;
 
@@ -17,20 +17,19 @@ namespace Service.Service
         }
 
 
-        public DtoSellOrder AddSellOrder(DtoSellOrder orden)
+        public string AddSellOrder(int id , DtoSellOrder orden)
         {
-
-            if (orden.PayMethod == "" || orden.TotalValue == 0)
+            var product = _TiendaContext.DtoProducts.FirstOrDefault(x => x.idProducts == id);
+            if (orden.PayMethod == "")
             {
-
-                return null; 
+                return "error"; 
             }
-
-
-            _TiendaContext.DtoSellOrders.Add(orden);
+            orden.PayMethod = orden.PayMethod;
+            orden.TotalValue = product.Price;
+            _TiendaContext.Add(orden);
             _TiendaContext.SaveChanges();
 
-            return orden;
+            return "se agrego";
         }
        
         public string DeleteOrderByid (int orderid)
@@ -65,6 +64,14 @@ namespace Service.Service
             var order = _TiendaContext.DtoSellOrders.FirstOrDefault(x =>x.idOrder == id);
 
             return order; 
+        }
+
+
+
+        public List<DtoProducts> GetAllProducts()
+        {
+            var products = _TiendaContext.DtoProducts.ToList();
+            return products;
         }
     }
 }

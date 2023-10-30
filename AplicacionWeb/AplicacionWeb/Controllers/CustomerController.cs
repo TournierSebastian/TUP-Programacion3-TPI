@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Modelos.Dto;
+using Models.Dto;
 using Service.IService;
+using Service.Service;
 
 
 namespace AplicacionWeb.Controllers
@@ -17,6 +19,28 @@ namespace AplicacionWeb.Controllers
             _ICustomerService = ICustomerService;
             _logger = looger;
         }
+
+        [HttpGet("GetAllProducts")]
+        public ActionResult<List<DtoProducts>> GetAllProducts()
+        {
+            try
+            {
+                var Response = _ICustomerService.GetAllProducts();
+
+                if (Response == null)
+                {
+                    return NotFound("Products Not Found");
+                }
+                return Ok(Response);
+
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"An error occurred in GetAllProduct: {ex}");
+                return BadRequest($"{ex.Message}");
+            }
+        }
+
 
         [HttpGet("GetAllOrders")]
         public ActionResult<List<DtoSellOrder>> GetallOrder()
@@ -59,17 +83,18 @@ namespace AplicacionWeb.Controllers
 
         }
 
-    [HttpPost("AddSellOrder")]
-        public ActionResult<DtoSellOrder> AddSellOrder([FromBody] DtoSellOrder orden)
+    [HttpPost("AddSellOrder/ {id}")]
+        public ActionResult<string> AddSellOrder([FromBody] DtoSellOrder orden, int id)
         {
             try
             {
-                var response = _ICustomerService.AddSellOrder(orden);
-                if (orden.PayMethod == "" || orden.TotalValue == 0 || orden == null)
+                var response = _ICustomerService.AddSellOrder(id, orden);
+                if (response == "error")
                 {
                     return BadRequest("Incomplete Data");
-                }            
-                return Ok("Added sell order");
+                }
+         
+                return Ok("Added Product");
             } catch (Exception ex)
             {
                 _logger.LogError($"An error occurred in AddSellOrder: {ex}");
@@ -99,6 +124,8 @@ namespace AplicacionWeb.Controllers
            
         }
 
+
+      
     }
 }
 

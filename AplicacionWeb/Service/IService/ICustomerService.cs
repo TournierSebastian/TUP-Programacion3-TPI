@@ -1,5 +1,6 @@
 ﻿
 using Modelos.Dto;
+using Models.Dto;
 
 namespace Service.IService
 {
@@ -9,9 +10,14 @@ namespace Service.IService
         List<DtoSellOrder> GetallOrder();
 
         DtoSellOrder GetOrderById(int id);
-        DtoSellOrder AddSellOrder(DtoSellOrder orden);
+        string AddSellOrder(int id, DtoSellOrder orden);
         string DeleteOrderByid (int orderId);
 
+
+
+        //test
+        List<DtoProducts> GetAllProducts();
+        
     }
 
 }
