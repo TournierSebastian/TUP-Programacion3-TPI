@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Models.Dto;
 using Service.IService;
 
@@ -6,18 +7,21 @@ namespace AplicacionWeb.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class SuperAdminController : ControllerBase
     {
         private readonly ISuperAdminService _SuperAdminService;
         private readonly ILogger _logger;
+        private readonly IAuthService _AuthService;
 
-        public SuperAdminController(ISuperAdminService superAdminService, ILogger<SuperAdminController> logger)
+        public SuperAdminController(ISuperAdminService superAdminService, ILogger<SuperAdminController> logger, IAuthService authService)
         {
             _SuperAdminService = superAdminService;
             _logger = logger;
+            _AuthService = authService;
         }
-
-        [HttpGet("GetAllUser")]
+       
+        [HttpGet("GetAllUser")] 
 
         public ActionResult<List<DtoUser>> GetAllUser()
         {

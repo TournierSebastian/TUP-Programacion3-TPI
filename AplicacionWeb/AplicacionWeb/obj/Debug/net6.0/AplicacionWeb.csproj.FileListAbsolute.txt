@@ -180,3 +180,4 @@ C:\Users\matia\OneDrive\Escritorio\TUP-Programacion3-TPI\AplicacionWeb\Aplicacio
 C:\Users\matia\OneDrive\Escritorio\TUP-Programacion3-TPI\AplicacionWeb\AplicacionWeb\obj\Debug\net6.0\AplicacionWeb.pdb
 C:\Users\matia\OneDrive\Escritorio\TUP-Programacion3-TPI\AplicacionWeb\AplicacionWeb\obj\Debug\net6.0\AplicacionWeb.genruntimeconfig.cache
 C:\Users\matia\OneDrive\Escritorio\TUP-Programacion3-TPI\AplicacionWeb\AplicacionWeb\obj\Debug\net6.0\ref\AplicacionWeb.dll
+C:\Users\sebas\Desktop\TUP-Programacion3-TPI\AplicacionWeb\AplicacionWeb\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

@@ -11,6 +11,7 @@ namespace AplicacionWeb.Controllers
 
     {
         private readonly IAdminService _AdminService;
+       
         private readonly ILogger _logger;
 
         public AdminController(IAdminService adminService,  ILogger<AdminController> logger)
